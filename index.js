@@ -9,7 +9,7 @@ const fastNewsRoutes = require("./routes/fastNewsRoutes");
 // Middlewares
 app.use(
 	cors({
-		origin: "http://localhost:3001",
+		origin: process.env.WEB_API,
 		credentials: true,
 	})
 );
